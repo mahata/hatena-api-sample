@@ -2,3 +2,6 @@ This is your new Play 2.1 application
 =====================================
 
 This file will be packaged with your application, when using `play dist`.
+
+* Trying to integrate Hatena Doc to Play - http://developer.hatena.ne.jp/ja/documents/blog/apis/atom
+
