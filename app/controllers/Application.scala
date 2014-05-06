@@ -11,7 +11,6 @@ import org.apache.abdera.ext.wsse.WSSEAuthScheme
 import org.apache.commons.httpclient.UsernamePasswordCredentials
 
 object Application extends Controller {
-  
   def index = Action {
     Ok(views.html.index("Your new application is ready."))
   }
@@ -37,8 +36,6 @@ object Application extends Controller {
 
     // 記事の投稿
     val response = abderaClient.post(s"https://blog.hatena.ne.jp/$username/$blogDomain/atom/entry", entry)
-    println("STATUS CODE : " + response.getStatus)
-
-    Ok("Yo")
+    Ok("STATUS CODE : " + response.getStatus)
   }
 }
